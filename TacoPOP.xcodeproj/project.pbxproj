@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		84B9316C20BBBE8C00DAD5CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9316B20BBBE8C00DAD5CC /* AppDelegate.swift */; };
-		84B9316E20BBBE8C00DAD5CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9316D20BBBE8C00DAD5CC /* ViewController.swift */; };
 		84B9317120BBBE8C00DAD5CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B9316F20BBBE8C00DAD5CC /* Main.storyboard */; };
-		84B9317420BBBE8C00DAD5CC /* TacoPOP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B9317220BBBE8C00DAD5CC /* TacoPOP.xcdatamodeld */; };
 		84B9317620BBBE8C00DAD5CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B9317520BBBE8C00DAD5CC /* Assets.xcassets */; };
 		84B9317920BBBE8C00DAD5CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B9317720BBBE8C00DAD5CC /* LaunchScreen.storyboard */; };
+		84B9318720BBC13900DAD5CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9318620BBC13900DAD5CC /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84B9316820BBBE8C00DAD5CC /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B9316B20BBBE8C00DAD5CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84B9316D20BBBE8C00DAD5CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84B9317020BBBE8C00DAD5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84B9317320BBBE8C00DAD5CC /* TacoPOP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TacoPOP.xcdatamodel; sourceTree = "<group>"; };
 		84B9317520BBBE8C00DAD5CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B9317820BBBE8C00DAD5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B9317A20BBBE8C00DAD5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B9318620BBC13900DAD5CC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,62 @@
 		84B9316A20BBBE8C00DAD5CC /* TacoPOP */ = {
 			isa = PBXGroup;
 			children = (
-				84B9316B20BBBE8C00DAD5CC /* AppDelegate.swift */,
-				84B9316D20BBBE8C00DAD5CC /* ViewController.swift */,
-				84B9316F20BBBE8C00DAD5CC /* Main.storyboard */,
-				84B9317520BBBE8C00DAD5CC /* Assets.xcassets */,
-				84B9317720BBBE8C00DAD5CC /* LaunchScreen.storyboard */,
-				84B9317A20BBBE8C00DAD5CC /* Info.plist */,
-				84B9317220BBBE8C00DAD5CC /* TacoPOP.xcdatamodeld */,
+				84B9318520BBC0BD00DAD5CC /* Extensions */,
+				84B9318420BBC0B200DAD5CC /* Protocols */,
+				84B9318220BBBEB300DAD5CC /* Model */,
+				84B9318120BBBEAE00DAD5CC /* View */,
+				84B9318020BBBEA600DAD5CC /* Controller */,
+				84B9318320BBBEC000DAD5CC /* Resources */,
 			);
 			path = TacoPOP;
+			sourceTree = "<group>";
+		};
+		84B9318020BBBEA600DAD5CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B9316B20BBBE8C00DAD5CC /* AppDelegate.swift */,
+				84B9318620BBC13900DAD5CC /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84B9318120BBBEAE00DAD5CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B9316F20BBBE8C00DAD5CC /* Main.storyboard */,
+				84B9317720BBBE8C00DAD5CC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84B9318220BBBEB300DAD5CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84B9318320BBBEC000DAD5CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B9317520BBBE8C00DAD5CC /* Assets.xcassets */,
+				84B9317A20BBBE8C00DAD5CC /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84B9318420BBC0B200DAD5CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		84B9318520BBC0BD00DAD5CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B9316E20BBBE8C00DAD5CC /* ViewController.swift in Sources */,
 				84B9316C20BBBE8C00DAD5CC /* AppDelegate.swift in Sources */,
-				84B9317420BBBE8C00DAD5CC /* TacoPOP.xcdatamodeld in Sources */,
+				84B9318720BBC13900DAD5CC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,19 +351,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		84B9317220BBBE8C00DAD5CC /* TacoPOP.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				84B9317320BBBE8C00DAD5CC /* TacoPOP.xcdatamodel */,
-			);
-			currentVersion = 84B9317320BBBE8C00DAD5CC /* TacoPOP.xcdatamodel */;
-			path = TacoPOP.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 84B9316020BBBE8C00DAD5CC /* Project object */;
 }
